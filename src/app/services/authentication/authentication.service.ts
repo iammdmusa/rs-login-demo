@@ -21,7 +21,8 @@ export class AuthenticationService {
     return false;
   }
 
-  private checkCredentials(signinData: SigninData): boolean {
+  //used public for Test case unless private will be safe.
+  public checkCredentials(signinData: SigninData): boolean {
     //In Real life sinario will check auth serives
     return (
       this.checkEmail(signinData.getEmail()) &&

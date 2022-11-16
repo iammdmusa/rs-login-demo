@@ -1,5 +1,6 @@
 .avatar {
-  max-width: 99%;
+  max-width: 120px;
+  margin-bottom: 2rem;
 }
 
 .more-details {
@@ -7,4 +8,23 @@
   color: blue;
   border-bottom: 1px solid blue;
   width: max-content;
+}
+
+.border-left {
+  box-shadow: 6px 0 4px -4px transparent, -6px 0 4px -4px #999;
+
+}
+
+.profile-info {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  font-style: italic;
+  font-size: 0.75rem;
+  word-break: break-all;
+
+  img {
+    max-width: 16px;
+    margin-right: 4px;
+  }
 }

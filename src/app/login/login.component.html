@@ -27,7 +27,7 @@
               autofocus
               ngModel
             />
-            <label for="email">Email or User name</label>
+            <label for="email">Email</label>
           </div>
           <div class="form-floating mb-4">
             <input
@@ -41,14 +41,18 @@
             />
             <label for="password">Password</label>
           </div>
-          <button class="w-100 btn btn-lg btn-dark mb-4" type="submit">
+          <button
+            class="w-100 btn btn-lg btn-dark"
+            [ngClass]="isFormValid || areCredentialsInvalid ? '' : 'mb-4'"
+            type="submit"
+          >
             Login
           </button>
           <div class="text-invalid" *ngIf="isFormValid">
-            Bitte füllen Sie alle Felder aus.
+            Please fill all fields.
           </div>
           <div class="text-invalid" *ngIf="areCredentialsInvalid">
-            Ungültiger Benutzer oder ungültiges Passwort.
+            Invalid user or password.
           </div>
         </form>
       </div>

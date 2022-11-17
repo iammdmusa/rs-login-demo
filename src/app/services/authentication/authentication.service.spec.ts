@@ -19,12 +19,12 @@ describe('AuthenticationService', () => {
   });
 
   it('authenticate should return false', () => {
-    const testUser = new SigninData('a', 'b');
+    const testUser = new SigninData('hello1@gmail.com', 'Test123456');
     expect(service.authenticate(testUser)).toBeFalsy();
   });
 
   it('authenticate should', () => {
-    const testUser = new SigninData('test', '11');
+    const testUser = new SigninData('hello@gmail.com', 'Test123');
     expect(service.checkCredentials(testUser)).toBeTruthy();
   });
 

@@ -6,7 +6,7 @@ import { SigninData } from 'src/app/model/signinData';
   providedIn: 'root',
 })
 export class AuthenticationService {
-  private readonly mockedUser: SigninData = new SigninData('test', '11');
+  private readonly mockedUser: SigninData = new SigninData('hello@gmail.com', 'Test123');
 
   isAuthenticated = false;
   constructor(private router: Router) {}
